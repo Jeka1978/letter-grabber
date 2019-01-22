@@ -22,7 +22,7 @@ public class LetterProducerFake implements LetterProducer {
     private final GameOfThrones faker;
 
     @Setter
-    private int delay=1;
+    private int delay=2000;
 
     @Override
     @SneakyThrows
