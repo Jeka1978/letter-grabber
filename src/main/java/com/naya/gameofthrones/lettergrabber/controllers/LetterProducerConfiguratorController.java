@@ -17,4 +17,9 @@ public class LetterProducerConfiguratorController {
     public void setProducerDelay(@PathVariable("producerDelay") int delay) {
         producer.setDelay(delay);
     }
+
+    @GetMapping("/timeToHandle/{timeToHandle}")
+    public void setTimeToHandle(@PathVariable int timeToHandle){
+        producer.setTimeToProcess(timeToHandle);
+    }
 }

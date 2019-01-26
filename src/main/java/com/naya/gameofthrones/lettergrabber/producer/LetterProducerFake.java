@@ -24,6 +24,9 @@ public class LetterProducerFake implements LetterProducer {
     @Setter
     private int delay=2000;
 
+    @Setter
+    private int timeToProcess=1;
+
     @Override
     @SneakyThrows
     public Letter getLetter() {
@@ -32,7 +35,7 @@ public class LetterProducerFake implements LetterProducer {
     }
 
     private Letter randomLetter(){
-        return Letter.builder().content(faker.quote()).location(faker.city()).signature(faker.character()).build();
+        return Letter.builder().content(faker.quote()).location(faker.city()).signature(faker.character()).timeToProcess(timeToProcess).build();
     }
 
 

@@ -21,4 +21,6 @@ public class CommunicationController {
         distributor.setSendDelay(delay);
     }
 
+
+
 }
